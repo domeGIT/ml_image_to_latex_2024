@@ -9,3 +9,4 @@ u folderu data:
     - folder formula_images_processed, u kome se nalaze 
     
         *.png slike
+    - vocab/100k_vocab.json (privremeno)
