@@ -40,3 +40,7 @@ Pokretanje koda pomoću google colaba:
 3. otvoriti svesku https://colab.research.google.com/drive/1iu2iXikebtWziZMu7InBomvsmNVIjtBX#scrollTo=OPLzE5vjS6Eb
 4. odabrati runtime type T4 GPU
 5. pokrenuti kod
+
+Paketi potrebni za pokretanje projekta: torch, torchvision, matplotlib, pandas, numpy, os, shutil (samo za google colab), re, json, nltk
+
+Ukoliko neki od ovih paketa nije po difoltu uključen u google colab okruženje, potrebno je otvoriti terminal i pokrenuti `pip install ime_paketa`.
