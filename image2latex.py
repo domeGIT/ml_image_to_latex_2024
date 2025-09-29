@@ -577,3 +577,12 @@ def exact_match(pred_list, truth_list):
     # Return the mean EM score for the entire batch
     return torch.tensor(np.mean(em_scores))
 
+def get_device():
+    return torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+def bind_gpu(data):
+    device = get_device()
+    if isinstance(data, (list, tuple)):
+        return [bind_gpu(data_elem) for data_elem in data]
+    else:
+        return data.to(device, non_blocking=True)
